@@ -1,0 +1,152 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /**
+ *
+ * Crossword Topology
+ *
+ **/
+ 
+ #xw {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+#xw .crossword {
+    margin: auto;
+    border: 0;
+    border-spacing: 4px;
+    border-collapse: separate;
+}
+#xw .crossword-cell {
+    border: 1px solid gray;
+    padding: 8px 0;
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: relative;
+    line-height: 1.2em;
+    text-align: center;
+}
+#xw .crossword-cell.no-border {
+    border: 0;
+}
+#xw .crossword-cell.start:before {
+    content: attr(data-position);
+    font-size: 10px;
+    position: absolute;
+    top: -6px;
+    left: 4px;
+    display: block;
+    opacity: 0.8;
+}
+#legend-wrap {
+    margin: 24px auto 12px;
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    border: 0;
+}
+#legend-wrap td {
+    vertical-align: top;
+}
+#legend-wrap ul {
+    margin: 6px 0;
+}
+#legend-wrap li {
+    list-style: none;
+    margin: 0;
+}
+#legend-wrap .clue-cell > strong {
+    min-width: 32px;
+    display: inline-block;
+}
+#xw .xw-input-focus {
+    outline: 2px solid rgba(0,177,205,0.2);
+    outline-offset: 0px;
+    border-color: rgb(0, 177, 205);
+}
+#xw .crossword-input {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    font-size: 20px;
+    border-width: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+#xw .crossword-input:focus {
+    outline-offset: 0;
+    outline: unset;
+    padding-bottom: 2px;
+}
+
+
+
+/** LOADER **/
+.loader-12 {
+  position: relative;
+      display: inline-block;
+    width: 3em;
+    height: 3em;
+    color: inherit;
+    vertical-align: middle;
+    pointer-events: none;
+}
+.loader-12:before, .loader-12:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: currentcolor;
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 50%;
+  box-shadow: -1.5em 0 0 currentcolor;
+  -webkit-animation: loader-12 1s linear infinite;
+          animation: loader-12 1s linear infinite;
+}
+.loader-12:after {
+  top: 50%;
+  bottom: 0;
+  -webkit-animation-delay: .25s;
+          animation-delay: .25s;
+}
+
+@-webkit-keyframes loader-12 {
+  0%,
+	100% {
+    box-shadow: -1.5em 0 0 transparent;
+    background-color: currentcolor;
+  }
+  50% {
+    box-shadow: -1.5em 0 0 currentcolor;
+    background-color: transparent;
+  }
+}
+
+@keyframes loader-12 {
+  0%,
+	100% {
+    box-shadow: -1.5em 0 0 transparent;
+    background-color: currentcolor;
+  }
+  50% {
+    box-shadow: -1.5em 0 0 currentcolor;
+    background-color: transparent;
+  }
+}

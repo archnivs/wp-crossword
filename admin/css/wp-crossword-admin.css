@@ -1,0 +1,101 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ 
+ body.post-type-wp_crossword #advanced-sortables {
+     margin-top: 12px;
+ }
+ 
+ #words-clue .dashicons, 
+ #crossword-topology-wrap .dashicons {
+     line-height: 1.3em;
+ }
+ #words-clue .last-row .button-primary {
+     margin: 3px auto;
+     height: 30px;
+ }
+ #words-clue .remove-col .button-secondary:hover {
+    border-color: #f00;
+    color: #f00;
+    background-color: #f9e6e6;
+ }
+  #words-clue .index-col {
+      width: 4%;
+  }
+  #words-clue .word-col {
+      width: 24%;
+  }
+  #words-clue .clue-col {
+      width: 56%;
+  }
+  #words-clue .remove-col {
+      width: 6%;
+  }
+   #words-clue .last-row .button-primary,
+   #words-clue .last-row .max-word-error {
+       display: inline-block;
+   }
+   #words-clue .last-row .max-word-error {
+       color: red;
+       font-weight: bolder;
+       line-height: 2em;
+   }
+   
+    #generate-crossword {
+        font-size: 18px;
+    }
+    
+#shortcode-clipboard {
+    font-size: 20px;
+    margin: 12px 0 24px;
+}
+    
+/**
+ *
+ * Crossword Topology
+ *
+ **/
+ 
+ #xw {
+    width: 100%;
+    text-align: center;
+}
+.crossword {
+    margin: auto;
+}
+.crossword-cell {
+    border: 1px solid gray;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+.crossword-cell.no-border {
+    border: 0;
+}
+.crossword-cell.start:before {
+    content: attr(data-position);
+    font-size: 9px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    display: block;
+    opacity: 0.8;
+}
+#legend-wrap {
+    margin: 24px auto 12px;
+    max-width: 550px;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+#legend-wrap td {
+    vertical-align: top;
+}
+#legend-wrap ul {
+    margin: 6px 0;
+}
